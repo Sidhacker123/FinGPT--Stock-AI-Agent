@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+httpx
+pydantic
+torch
+numpy
+pandas
+scikit-learn
+streamlit

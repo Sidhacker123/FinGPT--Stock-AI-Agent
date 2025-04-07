@@ -1,0 +1,38 @@
+{
+    "project": "FinGPT",
+    "status": "enterprise-ready",
+    "generated_at": "2025-04-07T04:08:36.380497",
+    "components": {
+        "agents": {
+            "portfolio_agent": "CUDA LSTM + MPT + NIM",
+            "debt_agent": "FOIR/DSCR + NIM",
+            "fin_agent": "orchestrates RAG and agents"
+        },
+        "RAG": {
+            "primary": "NVIDIA NeMo Retriever (live)",
+            "fallback": "FAISS-based custom RAG",
+            "logs": "logs/rag_live_*.json, logs/rag_docs_faiss.json"
+        },
+        "LLM": {
+            "api": "nvidia/nim-llama3-8b",
+            "integration": "via llm/llama3_client.py"
+        },
+        "Market Data": {
+            "source": "Alpha Vantage API",
+            "integration": "portfolio_agent, debt_agent"
+        },
+        "CUDA": {
+            "model": "LSTM in PyTorch (GPU-accelerated)"
+        },
+        "UI": {
+            "framework": "Streamlit + FastAPI",
+            "auth": "Streamlit password-protected login",
+            "export": "Markdown export, logs, charts"
+        },
+        "Evaluator": {
+            "planned": true,
+            "type": "NeMo Evaluator (early access pending)",
+            "current": "mock scoring + Alpha Vantage comparison"
+        }
+    }
+}
