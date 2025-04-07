@@ -1,4 +1,10 @@
 
+- This project showcases:
+Multi-agent LLM orchestration
+Enterprise RAG + financial logic
+Live NeMo + NIM integration
+CUDA-enhanced modeling
+
 # Agentic Fintech AI System
 
 This project is a multi-agent financial assistant powered by NVIDIA NIM, CUDA, LSTM-based forecasting, and portfolio optimization logic. It includes:
@@ -8,7 +14,6 @@ This project is a multi-agent financial assistant powered by NVIDIA NIM, CUDA, L
 - 🧠 NeMo + NIM API integration for reasoning and explanations
 - 🌐 Streamlit UI and FastAPI backend
 - 💾 Alpha Vantage API integration for real-time stock data
-
 
 Component	Description
 🧠 Custom RAG	FAISS-based fallback for fast offline document embedding & retrieval
@@ -102,7 +107,8 @@ Real-time cloud news	                         ❌   	      ✅
 Secure hosted source (Bloomberg, SEC)	         ❌	          ✅
 So I decided to use both of them in this project
 
-
+FUTURE-
+Working on enhancing the RAG & Nemo Evaluator
 
 
 
