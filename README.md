@@ -1,8 +1,10 @@
-
-- This project showcases:
+This project showcases:
 Multi-agent LLM orchestration
+
 Enterprise RAG + financial logic
+
 Live NeMo + NIM integration
+
 CUDA-enhanced modeling
 
 # Agentic Fintech AI System
