@@ -1,4 +1,5 @@
 This project showcases:
+
 Multi-agent LLM orchestration
 
 Enterprise RAG + financial logic
