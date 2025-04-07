@@ -1,0 +1,22 @@
+{
+    "timestamp": "2025-04-07T03:42:43.185132",
+    "retriever": "nvidia/nim-rag-retriever-mixtral",
+    "query": "What are the top risks and opportunities for investing in NVIDIA in 2024?",
+    "documents": [
+        {
+            "source": "Bloomberg - AI Chip Market",
+            "content": "NVIDIA remains dominant in the AI GPU market but faces increasing competition from AMD and custom silicon solutions.",
+            "confidence": 0.94
+        },
+        {
+            "source": "SEC 10-K Filing 2023",
+            "content": "NVIDIA identifies supply chain dependency and geopolitical tensions as key risks in their most recent annual filing.",
+            "confidence": 0.91
+        },
+        {
+            "source": "Morgan Stanley Equity Research",
+            "content": "NVIDIA\u2019s datacenter segment is projected to grow 35% YoY, driven by demand from hyperscalers deploying LLM infrastructure.",
+            "confidence": 0.89
+        }
+    ]
+}

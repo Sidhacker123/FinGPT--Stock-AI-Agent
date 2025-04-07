@@ -1,0 +1,32 @@
+{
+    "timestamp": "2025-04-07T02:24:05.351635",
+    "query": "top 5 semiconductor stocks to invest in 2024 and their risks",
+    "retriever": "nvidia/nim-rag-retriever-mixtral",
+    "results": [
+        {
+            "title": "NVIDIA's AI Chip Growth in 2024",
+            "source": "Bloomberg",
+            "content": "NVIDIA continues to dominate the AI chip market with projected earnings growth of over 30%. Key risks include supply chain constraints and geopolitical tensions in Asia."
+        },
+        {
+            "title": "AMD Expands in Data Centers",
+            "source": "Yahoo Finance",
+            "content": "AMD is aggressively targeting data center growth, aiming for a 20% YoY increase. Analysts warn of competition from Intel's new Xeon line."
+        },
+        {
+            "title": "TSMC's Global Fabrication Strategy",
+            "source": "NASDAQ",
+            "content": "TSMC expands its manufacturing to Arizona, mitigating geopolitical risk and improving North American supply reliability."
+        },
+        {
+            "title": "Broadcom's Networking Edge",
+            "source": "MarketWatch",
+            "content": "Broadcom leverages custom silicon to dominate enterprise networking. Challenges include integration risks from VMware acquisition."
+        },
+        {
+            "title": "Intel\u2019s AI Comeback Plans",
+            "source": "Reuters",
+            "content": "Intel bets big on Gaudi2 chips for AI workloads. Success hinges on ecosystem adoption and price-performance competitiveness."
+        }
+    ]
+}

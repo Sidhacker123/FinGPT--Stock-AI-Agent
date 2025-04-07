@@ -1,0 +1,7 @@
+{
+    "accuracy_score": 0.87,
+    "reasoning_score": 0.88,
+    "clarity_score": 0.91,
+    "overall_score": 0.89,
+    "explanation": "Evaluation confirms the agent selected high-potential assets with explainable reasoning and high clarity in output."
+}
