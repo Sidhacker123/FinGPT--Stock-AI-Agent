@@ -74,13 +74,13 @@ uvicorn app:app --reload
 ### Portfolio Agent
 
 - Uses LSTM to predict stock return
-- 
+  
 - Applies volatility-based scoring
-- 
+  
 - Optimizes allocation using MPT
-- 
+  
 - Explains strategy with NeMo LLM
-- 
+  
 
 ### Loan Restructuring Agent
 
