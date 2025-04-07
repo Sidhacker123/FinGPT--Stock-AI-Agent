@@ -13,15 +13,15 @@ CUDA-enhanced modeling
 This project is a multi-agent financial assistant powered by NVIDIA NIM, CUDA, LSTM-based forecasting, and portfolio optimization logic. It includes:
 
 - 📊 Portfolio generation agent using LSTM and Modern Portfolio Theory (MPT), simulations of 10k+ portfolio through Monte-Carlo leveraging CUDA
--  
+  
 - 💸 Loan restructuring agent with FOIR and DSCR evaluation
-- 
+  
 - 🧠 NeMo + NIM API integration for reasoning and explanations
-- 
+  
 - 🌐 Streamlit UI and FastAPI backend
-- 
+  
 - 💾 Alpha Vantage API integration for real-time stock data
-- 
+
 
 Component	Description
 
@@ -93,13 +93,13 @@ uvicorn app:app --reload
 
 🔍 RAG Pipeline
 
-Mode	                         Source	                        Output
+Mode	                                                                                             Source	                                             Output
 
-⚡ Online(Live)	               NeMo Retriever (Mixtral)	   Retrieves news/filings in real-time
+⚡ Online(Live)	                                                                        NeMo Retriever (Mixtral)	                         Retrieves news/filings in real-time
 
-🗃️ Offline(Fallback)	         FAISS local index	         Pulls from embedded PDFs and CSVs
+🗃️ Offline(Fallback)	                                                                       FAISS local index	                            Pulls from embedded PDFs and CSVs
 
-✅ Logging           	         logs/rag_live_*.json	       Audit trails of all RAG executions
+✅ Logging           	                                                                     logs/rag_live_*.json	                            Audit trails of all RAG executions
 
 
 🔄 Model Training + Inference
