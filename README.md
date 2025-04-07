@@ -32,27 +32,21 @@ Component	Description
 
 ## Setup Instructions
 
-### 1. Clone this repository
+# 1. Install dependencies
+pip install -r requirements.txt
 
-### 2. Install dependencies on a GPU server
-```bash
-bash gpu_setup.sh
-```
+# 2. Add API keys
+configs/secrets.toml
 
-### 3. Add your API keys in `configs/secrets.toml`
-```toml
-[NVIDIA]
-NIM_API_KEY = "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"
+# 3. Embed docs (optional)
+python -m rag.faiss_retriever
 
-[ALPHA_VANTAGE]
-API_KEY = "NXJNBRRG8FGKS7TN"
-```
+# 4. Run the Streamlit UI
+streamlit run streamlit_app.py
 
-### 4. Run backend + UI
-```bash
-uvicorn main:app --reload
-streamlit run app.py
-```
+# 5. Run FastAPI backend
+uvicorn app:app --reload
+
 
 ## Agent Descriptions
 
