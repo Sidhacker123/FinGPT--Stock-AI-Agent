@@ -167,5 +167,98 @@ FUTURE-
 
 Working on enhancing the RAG & Nemo Evaluator
 
+🔹 Architecture Diagram: FinGPT System Architecture
+
+Overview:
+FinGPT is an enterprise-grade multi-agent AI system for financial portfolio generation, credit optimization, and real-time investor recommendations. It leverages distributed computing to provide scalable, low-latency responses using multiple NVIDIA technologies.
+
+System Components:
+
+Client Layer
+
+Web UI (Streamlit)
+
+REST API (FastAPI)
+
+User auth, stock search, portfolio configuration
+
+Controller Service
+
+Agent Orchestration Layer
+
+Task Dispatcher (PortfolioAgent, DebtAgent, ShadowInvestorAgent)
+
+Agent Layer (Multi-agent System)
+
+PortfolioAgent: Uses LSTM + Monte Carlo + cvxpy
+
+DebtAgent: Uses FOIR/DSCR + Restructuring Planner
+
+ShadowInvestorAgent: Leverages strategy mimicry using RL
+
+Data & Retrieval Layer
+
+Real-time stock feed via Alpha Vantage
+
+Knowledge base with NVIDIA NeMo Retriever
+
+FAISS fallback for offline RAG
+
+LLMOps Layer
+
+Model store (CUDA-accelerated PyTorch models)
+
+Feedback capture pipeline (RAG + User Labels)
+
+Evaluation framework for agent consistency, hallucination check
+
+Infrastructure Layer
+
+Distributed inference using NVIDIA NIM APIs
+
+Task queues via Redis
+
+Compute orchestration using Docker + NVIDIA Docker runtime
+
+🔹 LLMOps Workflow: Pipeline & Retrieval Logic
+
+Workflow Steps:
+
+Input Prompt (User stock/portfolio query)
+
+RAG Engine Routing:
+
+NeMo Retriever fetches context
+
+If offline, fallback to FAISS
+
+Agent Activation:
+
+Controller dispatches task to PortfolioAgent or DebtAgent
+
+CUDA Inference:
+
+CUDA-based PyTorch model runs LSTM predictions
+
+Strategy Generation:
+
+Output goes through explanation generator using NIM LLaMA3-8B
+
+Feedback Capture:
+
+User rates recommendation (used for retraining signal)
+
+🔹 Distributed Computing Highlights
+
+Multi-node Inference: PortfolioAgent and DebtAgent inference requests distributed across GPU nodes
+
+Parallelism: Training LSTM models using data parallel PyTorch on multiple CUDA cores
+
+LLM Serving: NeMo Retriever and LLaMA3 inference distributed across NIM endpoint replicas
+
+Fault Tolerance: Redis queues with retry logic; fallback FAISS search node
+
+Observability: Logs, metrics, and evaluation scores pushed to Prometheus/Grafana
+
 
 
